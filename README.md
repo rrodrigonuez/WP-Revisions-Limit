@@ -93,7 +93,7 @@ Note that if you include your own classes, or third-party libraries, there are t
 * `plugin-name/admin` is for all admin-specific functionality
 * `plugin-name/public` is for all public-facing functionality
 
-Note that previous versions of the Boilerplate did not include `Plugin_Name_Loader` but this class is used to register all filters and actions with WordPress.
+Note that previous versions of the Boilerplate did not include `Wp_Revisions_Limit_Loader` but this class is used to register all filters and actions with WordPress.
 
 The example code provided shows how to register your hooks with the Loader class. More information will be provided in the upcoming documentation on the website.
 

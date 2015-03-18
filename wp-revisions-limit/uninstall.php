@@ -22,7 +22,7 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Plugin_Name
+ * @package    Wp_Revisions_Limit
  */
 
 // If uninstall not called from WordPress, then exit.
