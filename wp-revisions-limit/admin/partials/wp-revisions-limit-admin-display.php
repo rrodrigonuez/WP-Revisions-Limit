@@ -12,5 +12,17 @@
  * @subpackage Wp_Revisions_Limit/admin/partials
  */
 ?>
-
-<!-- This file should primarily consist of HTML with a little bit of PHP. -->
+<?php
+$this->load_options();
+?>
+<div class="wrap">
+    <h2>WP Revisions Limit</h2>           
+    <form method="post" action="options.php">
+    <?php
+        // This prints out all hidden setting fields
+        settings_fields( 'wp_revisions_limit_group' );
+        do_settings_sections( $this->plugin_name );
+        submit_button();
+    ?>
+    </form>
+</div>

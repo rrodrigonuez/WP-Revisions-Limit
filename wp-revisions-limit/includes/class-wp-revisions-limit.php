@@ -44,9 +44,9 @@ class Wp_Revisions_Limit {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      string    $wp_revisions_limit    The string used to uniquely identify this plugin.
+	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
 	 */
-	protected $wp_revisions_limit;
+	protected $plugin_name;
 
 	/**
 	 * The current version of the plugin.
@@ -68,13 +68,12 @@ class Wp_Revisions_Limit {
 	 */
 	public function __construct() {
 
-		$this->wp_revisions_limit = 'wp-revisions-limit';
+		$this->plugin_name = 'wp-revisions-limit';
 		$this->version = '1.0.0';
 
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
-		$this->define_public_hooks();
 
 	}
 
@@ -147,9 +146,15 @@ class Wp_Revisions_Limit {
 
 		$plugin_admin = new Wp_Revisions_Limit_Admin( $this->get_wp_revisions_limit(), $this->get_version() );
 
+		$this->loader->add_action( 'plugins_loaded', $plugin_admin, 'define_post_revisions' );
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'init' );
+
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'wp_revisions_limit_menu' );
+
+		$this->loader->add_filter( 'plugin_action_links_' . $this->plugin_name . '/' . $this->plugin_name . '.php', $plugin_admin, 'add_action_links' );
 	}
 
 	/**
@@ -169,7 +174,7 @@ class Wp_Revisions_Limit {
 	 * @return    string    The name of the plugin.
 	 */
 	public function get_wp_revisions_limit() {
-		return $this->wp_revisions_limit;
+		return $this->plugin_name;
 	}
 
 	/**
