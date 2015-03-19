@@ -16,7 +16,7 @@ WordPress 3.6 allows users to control how many revisions are stored for each sup
 
 With this plugin enabled, simply visit **Settings >  Revisions Limit** to specify the number of revisions stored.
 
-**Development is over on GitHub: https://github.com/ethitter/WP-Revisions-Control.**
+**Development is over on Bitbucket: https://bitbucket.org/rrodrigonuez/wp-revisions-limit**
 
 == Installation ==
 
