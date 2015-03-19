@@ -6,7 +6,6 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       http://example.com
  * @since      1.0.0
  *
  * @package    Wp_Revisions_Limit
@@ -25,7 +24,7 @@
  * @since      1.0.0
  * @package    Wp_Revisions_Limit
  * @subpackage Wp_Revisions_Limit/includes
- * @author     Your Name <email@example.com>
+ * @author     Roger Rodrigo
  */
 class Wp_Revisions_Limit {
 
@@ -149,7 +148,6 @@ class Wp_Revisions_Limit {
 		$this->loader->add_action( 'plugins_loaded', $plugin_admin, 'define_post_revisions' );
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'init' );
 
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'wp_revisions_limit_menu' );

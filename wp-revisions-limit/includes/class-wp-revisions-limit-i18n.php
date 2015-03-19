@@ -6,7 +6,6 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       http://example.com
  * @since      1.0.0
  *
  * @package    Wp_Revisions_Limit
@@ -22,7 +21,7 @@
  * @since      1.0.0
  * @package    Wp_Revisions_Limit
  * @subpackage Wp_Revisions_Limit/includes
- * @author     Your Name <email@example.com>
+ * @author     Roger Rodrigo
  */
 class Wp_Revisions_Limit_i18n {
 

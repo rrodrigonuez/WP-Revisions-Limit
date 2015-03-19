@@ -3,7 +3,6 @@
 /**
  * Register all actions and filters for the plugin
  *
- * @link       http://example.com
  * @since      1.0.0
  *
  * @package    Wp_Revisions_Limit
@@ -19,7 +18,7 @@
  *
  * @package    Wp_Revisions_Limit
  * @subpackage Wp_Revisions_Limit/includes
- * @author     Your Name <email@example.com>
+ * @author     Roger Rodrigo
  */
 class Wp_Revisions_Limit_Loader {
 

@@ -1,12 +1,6 @@
 <?php
 
 /**
- * The plugin bootstrap file
- *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
  *
  * @link              http://www.twomandarins.com
  * @since             1.0.0
@@ -15,7 +9,7 @@
  * @wordpress-plugin
  * Plugin Name:       WP Revisions Limit
  * Plugin URI:        http://www.twomandarins.com
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Limit number of revisions stored.
  * Version:           1.0.0
  * Author:            Roger Rodrigo (TwoMandarins)
  * Author URI:        http://www.twomandarins.com
@@ -35,8 +29,10 @@ if ( ! defined( 'WPINC' ) ) {
  * This action is documented in includes/class-wp-revisions-limit-activator.php
  */
 function activate_wp_revisions_limit() {
+
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wp-revisions-limit-activator.php';
 	Wp_Revisions_Limit_Activator::activate();
+	
 }
 
 /**
@@ -44,8 +40,10 @@ function activate_wp_revisions_limit() {
  * This action is documented in includes/class-wp-revisions-limit-deactivator.php
  */
 function deactivate_wp_revisions_limit() {
+
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wp-revisions-limit-deactivator.php';
 	Wp_Revisions_Limit_Deactivator::deactivate();
+
 }
 
 register_activation_hook( __FILE__, 'activate_wp_revisions_limit' );
