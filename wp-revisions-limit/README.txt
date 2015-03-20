@@ -1,14 +1,13 @@
-=== WP REVISIONS LIMIT ===
-Contributors: (this should be a list of wordpress.org userid's)
-Donate link: http://example.com/
+=== WP Revisions Limit ===
+Contributors: barragan
 Tags: revision, revisions, admin
 Requires at least: 3.6
 Tested up to: 4.1
-Stable tag: 4.3
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Limit number of revisions stored.
+A simple plugin that allows you to assign the number of revisions stored for your posts.
 
 == Description ==
 
