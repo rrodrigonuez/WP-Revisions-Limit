@@ -1,9 +1,9 @@
 === WP Revisions Limit ===
 Contributors: barragan
-Tags: revision, revisions, admin
+Tags: revision, revisions, admin, post revisions, page revisions
 Requires at least: 3.6
 Tested up to: 4.1
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,12 @@ This section describes how to install the plugin and get it working.
 Navigate to **Settings > Revisions Limit** in your WordPress Dashboard, and look for the **Revisions Options** section.
 
 == Changelog ==
+
+= 1.0.2 =
+* Removed default limit of revisions assign by this plugin.
+
+= 1.0.1 =
+* Check if WP_POST_REVISIONS is already defined in wp-config.php file.
 
 = 1.0.0 =
 * Initial public release
