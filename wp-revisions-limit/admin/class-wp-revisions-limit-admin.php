@@ -221,12 +221,12 @@ class Wp_Revisions_Limit_Admin {
 		if ( !defined( self::WP_POST_REVISIONS ) ) {
 			$this->load_options();
 			
-			if ( isset( $this->options['revisions_limit'] ) && $this->options['revisions_limit'] != '' ) {
-				if ( is_numeric( $this->options['revisions_limit'] ) ) {
+			if ( isset( $this->options['revisions_limit'] )
+				&& $this->options['revisions_limit'] != ''
+				&& is_numeric( $this->options['revisions_limit'] )
+				)
+			{
 					define( self::WP_POST_REVISIONS, (int)$this->options['revisions_limit'] + 1 );
-				} else {
-					define( self::WP_POST_REVISIONS, self::DEFAULT_REVISIONS_LIMIT );
-				}
 			}
 		}
 	}

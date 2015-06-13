@@ -68,7 +68,7 @@ class Wp_Revisions_Limit {
 	public function __construct() {
 
 		$this->plugin_name = 'wp-revisions-limit';
-		$this->version = '1.0.0';
+		$this->version = '1.0.3';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -153,6 +153,7 @@ class Wp_Revisions_Limit {
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'wp_revisions_limit_menu' );
 
 		$this->loader->add_filter( 'plugin_action_links_' . $this->plugin_name . '/' . $this->plugin_name . '.php', $plugin_admin, 'add_action_links' );
+	
 	}
 
 	/**

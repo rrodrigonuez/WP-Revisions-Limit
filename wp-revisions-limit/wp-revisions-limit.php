@@ -10,7 +10,7 @@
  * Plugin Name:       WP Revisions Limit
  * Plugin URI:        http://www.twomandarins.com
  * Description:       Limit number of revisions stored.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            Roger Rodrigo (TwoMandarins)
  * Author URI:        http://www.twomandarins.com
  * License:           GPL-2.0+
