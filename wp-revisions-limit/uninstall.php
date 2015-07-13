@@ -28,3 +28,10 @@
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
+
+function uninstall_wprl_plugin() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wp-revisions-limit-deactivator.php';
+	Wp_Revisions_Limit_Deactivator::uninstall_plugin();
+}
+
+uninstall_wprl_plugin();
