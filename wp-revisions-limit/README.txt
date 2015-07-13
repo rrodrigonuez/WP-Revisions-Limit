@@ -1,34 +1,100 @@
 === WP Revisions Limit ===
 Contributors: barragan
-Tags: revision, revisions, admin, post revisions, page revisions
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4Z3XBJXBPKRW6
+Tags: revision, revisions, admin, posts, post revisions, page, page revisions, performance, database, optimize, trash, clean
 Requires at least: 3.6
 Tested up to: 4.2
 Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A simple plugin that allows you to assign the number of revisions stored for your posts.
+Limit the number of revisions stored for your posts.
+Keep your WordPress fast and your database clean!
 
 == Description ==
 
-WordPress 3.6 allows users to control how many revisions are stored for each supported post type. No longer must you rely on the `WP_POST_REVISIONS` constant, which applied universally. This plugin provides an interface for this new functionality.
+Keep your WordPress **fast** and your database **clean**!
 
-With this plugin enabled, simply visit **Settings >  Revisions Limit** to specify the number of revisions stored.
+WordPress 3.6 allows users to control how many revisions are stored for each supported post type.
+This plugin provides an interface for this new functionality.
 
-**Development is over on Bitbucket: https://bitbucket.org/rrodrigonuez/wp-revisions-limit**
+= Why you should use this plugin? =
+
+Each time you click **Save Draft** or **Update**, a revision is saved on the database.
+WordPress will store all revisions for each page on your blog. Revisions allow you to look back at the recent changes you’ve made and revert to an earlier version if necessary.
+
+But, what about all those revisions that you won't use anymore? Yes, they are still there, taking space from your hosting space and incrasing the volume of your database and making it slower and havier!
+
+With this plugin you can easly limit the number of revisions that you want to save, with this you are saving space on your database and keeping the overall site performance in good levels.
+
+
+= How can I change/limit the number of revisions stored on my database? =
+
+Once `WP Revisions Limit` plugin is installed and activated, go to **Settings >  Revisions Limit** in your WordPress site and specify the number of revisions you want to store for each post/page under **Revisions Options** section.
+
+
+= Compatibility: =
+
+This plugin is fully compatible with any WordPress site with version 3.6 or higher.
+
+Requires at least WordPress 3.6 and PHP 5.3
+
+
+Please show your support for this plugin by giving it a [rating](http://wordpress.org/support/view/plugin-reviews/wp-revisions-limit?rate=5?rate=5#postform)
+
+**Development is on Bitbucket: https://bitbucket.org/rrodrigonuez/wp-revisions-limit**
+
+Pull requests are more than welcome!
+
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+= From your WordPress Dashboard: =
 
-1. Upload `wp-revisions-limit` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to **Settings > Revisions Limit** and set the options under **Revisions Options**.
+1. Go to the `Plugins > Add New`
+1. Search For `WP Revisions Limit`
+1. Install it
+1. Activate `WP Revisions Limit` plugin through the `Plugins` page in your WordPress site
+1. Go to **Settings > Revisions Limit** and set the options under **Revisions Options** section in your WordPress site
+
+
+= Uploading it in WordPress Dashboard: =
+
+1. Download `WP Revisions Limit` plugin
+1. Go to the `Plugins > Add New`
+1. Click `Upload`
+1. Select `wp-revisions-limit.zip` file from your computer
+1. Click `Install Now`
+1. Activate `WP Revisions Limit` plugin through the `Plugins` page in your WordPress site
+1. Go to **Settings > Revisions Limit** and set the options under **Revisions Options** section in your WordPress site
+
+
+= From WordPress.org using FTP: =
+
+1. Download `WP Revisions Limit` plugin
+1. Unzip `wp-revisions-limit.zip` file
+1. Upload `wp-revisions-limit` directory to your `/wp-content/plugins/` directory, using your favorite method (ftp, sftp, scp, etc...)
+1. Activate `WP Revisions Limit` plugin through the `Plugins` page in your WordPress site
+1. Go to **Settings > Revisions Limit** and set the options under **Revisions Options** section in your WordPress site
+
 
 == Frequently Asked Questions ==
 
 = Where do I change the plugin's settings? =
+
 Navigate to **Settings > Revisions Limit** in your WordPress Dashboard, and look for the **Revisions Options** section.
+
+= Is this plugin compatible with my WordPress site? =
+
+This plugin is fully compatible with any WordPress site with version 3.6 or higher.
+
+Requires at least WordPress 3.6 and PHP 5.3
+
+= How secure is this plugin? =
+
+This plugin has been developed with one thing in mind: to keep your WordPress site as **secure** as possible, **ad free**, **spam free** and with the maximum **performance** reachable.
+The developers that contribute to build this plugin are 100% **reliable** and some of the **most experienced WordPress developers**.
+
 
 == Changelog ==
 
@@ -44,6 +110,7 @@ Navigate to **Settings > Revisions Limit** in your WordPress Dashboard, and look
 
 = 1.0.0 =
 * Initial public release
+
 
 == Screenshots ==
 
