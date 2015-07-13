@@ -3,8 +3,8 @@ Contributors: barragan
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4Z3XBJXBPKRW6
 Tags: revision, revisions, admin, posts, post revisions, page, page revisions, performance, database, optimize, trash, clean
 Requires at least: 3.6
-Tested up to: 4.2
-Stable tag: 1.0.3
+Tested up to: 4.2.2
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -97,6 +97,10 @@ The developers that contribute to build this plugin are 100% **reliable** and so
 
 
 == Changelog ==
+
+= 1.1 =
+* Added redirection to Plugin Settings page when plugin is activated
+* Plugin option settings will be removed when plugin is uninstalled
 
 = 1.0.3 =
 * Fixed bug when no limit exists on Plugin initialization.

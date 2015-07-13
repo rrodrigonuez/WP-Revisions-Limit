@@ -22,13 +22,26 @@
 class Wp_Revisions_Limit_Activator {
 
 	/**
-	 * Short Description. (use period)
-	 *
-	 * Long Description.
-	 *
 	 * @since    1.0.0
 	 */
 	public static function activate() {
+
+		add_option( 'revisions_limit_activation_redirect', true );
+		add_action( 'activated_plugin', array( __CLASS__, 'activation_redirect' ) );
+
+	}
+
+	/**
+	 * @since    1.1
+	 */
+	public static function activation_redirect() {
+
+		if ( get_option( 'revisions_limit_activation_redirect', false ) ) {
+			if ( !isset( $_GET['activate-multi'] ) ) {
+				exit( wp_redirect( "options-general.php?page=wp-revisions-limit" ) );
+			}
+			delete_option( 'revisions_limit_activation_redirect' );
+		}
 
 	}
 

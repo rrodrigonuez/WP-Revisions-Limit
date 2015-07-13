@@ -22,14 +22,18 @@
 class Wp_Revisions_Limit_Deactivator {
 
 	/**
-	 * Short Description. (use period)
-	 *
-	 * Long Description.
-	 *
 	 * @since    1.0.0
 	 */
 	public static function deactivate() {
 
+	}
+
+	/**
+	 * @since    1.1
+	 */
+	public static function uninstall_plugin() {
+		delete_option( 'revisions_limit_activation_redirect' );
+		delete_option( 'revisions_limit_option' );
 	}
 
 }
