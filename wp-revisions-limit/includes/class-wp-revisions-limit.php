@@ -68,7 +68,7 @@ class Wp_Revisions_Limit {
 	public function __construct() {
 
 		$this->plugin_name = 'wp-revisions-limit';
-		$this->version = '1.1';
+		$this->version = '1.2';
 
 		$this->load_dependencies();
 		$this->set_locale();

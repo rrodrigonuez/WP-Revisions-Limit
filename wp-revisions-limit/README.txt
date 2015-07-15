@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: revision, revisions, admin, posts, post revisions, page, page revisions, performance, database, optimize, trash, clean
 Requires at least: 3.6
 Tested up to: 4.2.2
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -97,6 +97,9 @@ The developers that contribute to build this plugin are 100% **reliable** and so
 
 
 == Changelog ==
+
+= 1.2 =
+* Delete redirection settings stored in database when plugin is activated
 
 = 1.1 =
 * Added redirection to Plugin Settings page when plugin is activated

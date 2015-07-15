@@ -32,8 +32,10 @@ class Wp_Revisions_Limit_Deactivator {
 	 * @since    1.1
 	 */
 	public static function uninstall_plugin() {
+
 		delete_option( 'revisions_limit_activation_redirect' );
 		delete_option( 'revisions_limit_option' );
+		
 	}
 
 }
