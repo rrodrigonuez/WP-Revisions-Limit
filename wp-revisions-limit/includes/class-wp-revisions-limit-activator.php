@@ -37,10 +37,10 @@ class Wp_Revisions_Limit_Activator {
 	public static function activation_redirect() {
 
 		if ( get_option( 'revisions_limit_activation_redirect', false ) ) {
+			delete_option( 'revisions_limit_activation_redirect' );
 			if ( !isset( $_GET['activate-multi'] ) ) {
 				exit( wp_redirect( "options-general.php?page=wp-revisions-limit" ) );
 			}
-			delete_option( 'revisions_limit_activation_redirect' );
 		}
 
 	}
