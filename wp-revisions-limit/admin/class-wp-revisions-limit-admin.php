@@ -184,7 +184,11 @@ class Wp_Revisions_Limit_Admin {
 			wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
 		}
 
-		$wp_config_file = $_SERVER["DOCUMENT_ROOT"] . '/wp-config.php';
+		if ( !function_exists( 'get_home_path' ) )
+			require_once( plugin_dir_path( dirname( __FILE__ ) ) . '../../../wp-admin/includes/file.php' );
+
+		$wp_config_file = trailingslashit( get_home_path() ) . 'wp-config.php';
+
 		$contents = file_get_contents( $wp_config_file );
 		$pattern = "define\(( )?'WP_POST_REVISIONS'";
 		$pattern = "/^$pattern.*/m";
