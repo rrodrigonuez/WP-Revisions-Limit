@@ -42,7 +42,7 @@ Requires at least WordPress 3.6 and PHP 5.3
 
 Please show your support for this plugin by giving it a [rating](http://wordpress.org/support/view/plugin-reviews/wp-revisions-limit?rate=5?rate=5#postform)
 
-**Development is on Bitbucket: https://bitbucket.org/rrodrigonuez/wp-revisions-limit**
+**Development is on GitHub: https://github.com/rrodrigonuez/WP-Revisions-Limit**
 
 Pull requests are more than welcome!
 
