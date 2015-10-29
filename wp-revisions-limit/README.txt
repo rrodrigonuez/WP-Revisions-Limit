@@ -3,7 +3,7 @@ Contributors: barragan
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4Z3XBJXBPKRW6
 Tags: revision, revisions, admin, posts, post revisions, page, page revisions, performance, database, optimize, trash, clean
 Requires at least: 3.6
-Tested up to: 4.2.2
+Tested up to: 4.3.1
 Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -23,9 +23,9 @@ This plugin provides an interface for this new functionality.
 Each time you click **Save Draft** or **Update**, a revision is saved on the database.
 WordPress will store all revisions for each page on your blog. Revisions allow you to look back at the recent changes you’ve made and revert to an earlier version if necessary.
 
-But, what about all those revisions that you won't use anymore? Yes, they are still there, taking space from your hosting space and incrasing the volume of your database and making it slower and havier!
+But, what about all those revisions that you won't use anymore? Yes, they are still there, taking space from your hosting space and increasing the volume of your database and making it slower and heavier!
 
-With this plugin you can easly limit the number of revisions that you want to save, with this you are saving space on your database and keeping the overall site performance in good levels.
+With this plugin you can easily limit the number of revisions that you want to save, with this you are saving space on your database and keeping the overall site performance in good shape.
 
 
 = How can I change/limit the number of revisions stored on my database? =
