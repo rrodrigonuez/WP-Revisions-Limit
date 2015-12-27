@@ -3,7 +3,7 @@ Contributors: barragan
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4Z3XBJXBPKRW6
 Tags: revision, revisions, admin, posts, post revisions, page, page revisions, performance, database, optimize, trash, clean
 Requires at least: 3.6
-Tested up to: 4.3.1
+Tested up to: 4.4
 Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
